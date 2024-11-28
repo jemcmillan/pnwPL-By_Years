@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildfire Preparedness Levels</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Compare Pacific Northwest Preparedness Levels by Year</h1>
+        <div id="controls">
+            <label for="year1">Select Year:</label>
+            <select id="year1"></select>
+
+            <label for="year2">Select Year:</label>
+            <select id="year2"></select>
+
+            <button id="compareButton">Compare</button>
+        </div>
+        <div id="chart"></div>
+        <div id="legend"></div>
+    </div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

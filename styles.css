@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5; /* Light background color */
+}
+
+.container {
+    background-color: #ffffff; /* White background for the container */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #003300; /* Forest Service green */
+}
+
+#controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#controls label, #controls select, #controls button {
+    margin: 10px;
+}
+
+#controls button {
+    background-color: #006400; /* Forest Service dark green */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#controls button:hover {
+    background-color: #004d00; /* Darker green on hover */
+}
+
+#chart {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+#legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+/* Tooltip styles */
+.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 6px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    #controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #controls label, #controls select, #controls button {
+        margin: 5px;
+    }
+
+    #chart {
+        overflow-x: auto;
+    }
+
+    #chart svg {
+        width: 100%;
+    }
+}
